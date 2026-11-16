@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --background: #07050E;
+    --surface: #110B22;
+    --surface-elevated: #1A1133;
+    --foreground: #F6F3FF;
+    --muted: #A99EC2;
+    --primary: #C084FC;
+    --accent: #E5C158;
+    --border-subtle: rgba(192, 132, 252, 0.16);
+    --border-gold: rgba(229, 193, 88, 0.28);
+    --font-serif: 'Cormorant Garamond', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+
+  body {
+    background-color: var(--background);
+    background-image:
+      radial-gradient(circle at 18% 12%, rgba(107, 33, 168, 0.18) 0%, transparent 45%),
+      radial-gradient(circle at 82% 78%, rgba(76, 29, 149, 0.16) 0%, transparent 50%);
+    color: var(--foreground);
+    font-family: var(--font-sans);
+    letter-spacing: 0.01em;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-editorial {
+    font-family: var(--font-serif);
+    text-wrap: balance;
+  }
+
+  .font-mono-tabular {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Custom scrollbar for Obsidian Violet theme */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #07050E;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2A1C47;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #C084FC;
+}

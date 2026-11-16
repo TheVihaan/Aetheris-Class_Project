@@ -1,0 +1,6 @@
+{
+  "name": "Aetheris — Celestial Editorial Astrology",
+  "description": "LLM-powered natal chart observatory offering personalized daily horoscopes, romantic and platonic synastry analysis, and an adaptive AI astrologer with an inspectable memory bank.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
